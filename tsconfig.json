@@ -1,6 +1,7 @@
 {
   "version": "2.0.9",
   "compilerOptions": {
+        "target": "es5",
         "module": "commonjs",
         "moduleResolution": "node",
         "declaration": true,

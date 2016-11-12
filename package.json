@@ -8,7 +8,7 @@
     "dist/"
   ],
   "scripts": {
-    "test": "tsc && node dist/index.js test.html"
+    "build": "tsc && cp src/dict.txt dist/ && node dist/index.js test.html"
   },
   "keywords": [
     "spell",
@@ -18,8 +18,11 @@
   "author": "Noah Mulfinger",
   "license": "MIT",
   "devDependencies": {
+    "@types/chai": "^3.4.34",
+    "@types/es6-shim": "^0.31.32",
     "@types/graceful-fs": "^2.0.29",
     "@types/node": "^6.0.46",
+    "@types/recursive-readdir": "^1.2.28",
     "@types/yargs": "^6.3.1",
     "typescript": "^2.0.9"
   },
@@ -29,6 +32,12 @@
   "dependencies": {
     "fs": "0.0.1-security",
     "graceful-fs": "^4.1.10",
+    "recursive-readdir": "^2.1.0",
+    "rxjs": "^5.0.0-rc.2",
     "yargs": "^6.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/noahmulfinger/typochecker.git"
   }
 }
