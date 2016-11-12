@@ -1,0 +1,34 @@
+{
+  "name": "typochecker",
+  "version": "1.0.0",
+  "description": "Simple spell checker that looks for typos in HTML documents.",
+  "main": "dist/index.js",
+  "typings": "dist/index",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "test": "tsc && node dist/index.js test.html"
+  },
+  "keywords": [
+    "spell",
+    "typo",
+    "html"
+  ],
+  "author": "Noah Mulfinger",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/graceful-fs": "^2.0.29",
+    "@types/node": "^6.0.46",
+    "@types/yargs": "^6.3.1",
+    "typescript": "^2.0.9"
+  },
+  "bin": {
+    "typochecker": "dist/index.js"
+  },
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "graceful-fs": "^4.1.10",
+    "yargs": "^6.3.0"
+  }
+}

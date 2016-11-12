@@ -1,0 +1,12 @@
+{
+  "version": "2.0.9",
+  "compilerOptions": {
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "declaration": true,
+        "outDir": "dist/"
+    },
+    "files": [
+        "./src/index.ts"
+    ]
+}
