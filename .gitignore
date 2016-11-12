@@ -2,3 +2,4 @@
 dist
 node_modules
 typochecker-1.0.0.tgz
+**/.DS_Store
