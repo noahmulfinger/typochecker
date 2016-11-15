@@ -8,7 +8,7 @@
     "dist/"
   ],
   "scripts": {
-    "build": "tsc && cp src/dict.txt dist/ && node dist/index.js test.html"
+    "build": "tsc && cp src/dict.txt dist/ && node dist/index.js tests"
   },
   "keywords": [
     "spell",
@@ -32,7 +32,9 @@
   "dependencies": {
     "fs": "0.0.1-security",
     "graceful-fs": "^4.1.10",
+    "node-dir": "^0.1.16",
     "recursive-readdir": "^2.1.0",
+    "recursive-readdir-sync": "^1.0.6",
     "rxjs": "^5.0.0-rc.2",
     "yargs": "^6.3.0"
   },
